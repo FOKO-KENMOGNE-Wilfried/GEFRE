@@ -7,8 +7,8 @@ import whatsapp from "../../assets/icon/whatsapp.png";
 const StyledDiv = styled.div`
     width: 100%;
     height: 20%;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -200px;
     left: 0;
     right: 0;
     background-color: ${colors.primary};
@@ -120,7 +120,7 @@ function Footer(){
                 </StyledContact1>
                 <StyledImgBox>
                     <StyledPhone src={telephone} alt="telephone"/>
-                    <StyledMail src={mail} alt="mail"/>
+                    <a href="mailto:gefre.edu@gmail.com"><StyledMail src={mail} alt="mail"/></a>
                     <StyledSapp src={whatsapp} alt="whatsapp"/>
                 </StyledImgBox>
             </StyledContact>

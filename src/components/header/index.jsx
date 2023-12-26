@@ -11,7 +11,7 @@ const StyledDiv = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
