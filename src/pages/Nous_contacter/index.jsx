@@ -20,7 +20,7 @@ const StyledText1 = styled.div`
     margin-top: 150px;
     @media only screen and (max-width: 597px){
         font-size: 1.5em;
-        margin-top: -100px;
+        margin-top: -80px;
     }
 `
 const StyledSubText = styled.p`
