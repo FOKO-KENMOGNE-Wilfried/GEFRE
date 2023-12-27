@@ -96,7 +96,7 @@ const StyledSubDivTwoMobile = styled.div`
     align-items: center;
     padding-top: 35px;
     margin-top: 100px;
-    height: 70%;
+    height: 100vh;
     width: 148px;
     gap: 40px;
     background-color: ${colors.primary};
