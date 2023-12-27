@@ -18,6 +18,10 @@ const StyledText1 = styled.div`
     text-align: center;
     font-size: 2.5em;
     margin-top: 150px;
+    @media only screen and (max-width: 597px){
+        font-size: 1.5em;
+        margin-top: -100px;
+    }
 `
 const StyledSubText = styled.p`
     font-size: 0.4em;
@@ -30,6 +34,9 @@ const StyledSubText = styled.p`
     }
     @media only screen and (max-width: 1186px){
         margin-left: 50px;
+    }
+    @media only screen and (max-width: 593px){
+        margin-left: 25px;
     }
 `
 const StyledBox = styled.div`
