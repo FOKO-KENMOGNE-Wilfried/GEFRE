@@ -7,24 +7,53 @@ const StyledMainDiv = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 500px;
+    gap: 100px;
     height: 60vh;
     margin-top: 200px;
+    @media only screen and (max-width: 915px){
+        font-size: 1.5em;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
 `
 const StyledImg = styled.img`
     width: 300px;
     height: 300px;
+    @media only screen and (max-width: 440px){
+        width: 200px;
+        height: 200px;
+    }
 `
 const StyledText1 = styled.p`
     color: ${colors.secondary};
     font-weight: bold;
     text-align: center;
     font-size: 2em;
+    @media only screen and (max-width: 915px){
+        font-size: 1.5em;
+    }
+    @media only screen and (max-width: 520px){
+        font-size: 1em;
+    }
+    @media only screen and (max-width: 440px){
+        font-size: 0.8em;
+    }
 `
 const StyledText2 = styled.p`
-    width: 200px;
+    width: 500px;
     text-align: center;
     font-size: 1.5em;
+    @media only screen and (max-width: 915px){
+        font-size: 0.9em;
+    }
+    @media only screen and (max-width: 520px){
+        font-size: 0.7em;
+        width: 400px;
+    }
+    @media only screen and (max-width: 440px){
+        width: 250px;
+        font-size: 0.5em;
+    }
 `
 
 function Home(){
@@ -34,7 +63,10 @@ function Home(){
                 <StyledText1>GEFRE ?</StyledText1>
                 <StyledText2>
                     C&apos;est une groupe d&apos;enseignants experimentes
-                    de l&apos;enseignement secondaire
+                    dont la motivation est axée sur le succès et l&apos;épanouissement 
+                    de leurs élèves. Leur engagement envers l&apos;excellence académique 
+                    et le développement personnel de chaque apprenant constitue le 
+                    fondement même de la structure
                 </StyledText2>
             </div>
             <StyledImg src={home_img} alt="home_img"/>
