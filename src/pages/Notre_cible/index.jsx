@@ -23,8 +23,8 @@ const StyledImg = styled.img`
         height: 200px;
     }
     @media only screen and (max-width: 862px){
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
     @media only screen and (max-width: 515px){
         width: 150px;
@@ -38,10 +38,10 @@ const StyledText1 = styled.p`
     text-align: center;
     font-size: 2em;
     @media only screen and (max-width: 1222px){
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
     @media only screen and (max-width: 862px){
-        font-size: 1em;
+        font-size: 1.2em;
     }
 `
 const StyledText2 = styled.div`
@@ -54,17 +54,22 @@ const StyledText2 = styled.div`
     @media only screen and (max-width: 862px){
         margin-top: 0px;
     }
+    @media only screen and (max-width: 515px){
+        margin-top: 200px;
+    }
 `
 const StyledText3 = styled.p`
     text-align: left;
     @media only screen and (max-width: 1222px){
-        font-size: 0.8em;
+        font-size: 1.1em;
     }
     @media only screen and (max-width: 862px){
-        font-size: 0.5em;
+        font-size: 1em;
+        margin-left: 30px;
     }
     @media only screen and (max-width: 400px){
-        font-size: 0.4em;
+        font-size: 0.8em;
+        margin-left: 30px;
     }
 `
 const StyledLi = styled.li`
@@ -73,13 +78,14 @@ const StyledLi = styled.li`
     flex-direction: row;
     gap: 30px;
     @media only screen and (max-width: 1222px){
-        font-size: 0.8em;
+        font-size: 1.1em;
     }
     @media only screen and (max-width: 862px){
-        font-size: 0.5em;
+        font-size: 1em;
+        margin-left: 30px;
     }
     @media only screen and (max-width: 400px){
-        font-size: 0.4em;
+        font-size: 0.8em;
     }
     @media only screen and (max-width: 400px){
         gap: 10px
@@ -90,18 +96,19 @@ const StyledCheck = styled.img`
     height: 40px;
     margin-top: 20px;
     @media only screen and (max-width: 1222px){
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
+        margin-top: 25px;
     }
     @media only screen and (max-width: 862px){
-        width: 15px;
-        height: 15px;
-        margin-top: 13px;
+        width: 25px;
+        height: 25px;
+        margin-top: 25px;
     }
     @media only screen and (max-width: 400px){
-        width: 10px;
-        height: 10px;
-        margin-top: 10px;
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
     }
 `
 const StyledBox1 =styled.div`
@@ -126,13 +133,13 @@ function Cibles(){
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    D&apos;un cadre securisé, propre, alimenté en énergie et eau;
+                                Les élèves scolarisés ou non résidant à Ndogpassi et ses environs
                                 </p>
                             </StyledLi>
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    Des salles spacieuses où sont dispensés les cours.
+                                Les candidats aux concours dans les grandes écoles.
                                 </p>
                             </StyledLi>
                         </div>

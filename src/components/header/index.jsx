@@ -17,7 +17,6 @@ const StyledDiv = styled.div`
     right: 0;
     z-index: 1;
     padding-top: 20px;
-    padding-right: 10px;
     background-color: ${colors.primary};
 `
 const StyledDivMobile = styled.div`

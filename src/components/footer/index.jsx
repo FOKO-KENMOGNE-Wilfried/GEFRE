@@ -6,10 +6,10 @@ import whatsapp from "../../assets/icon/whatsapp.png";
 
 const StyledDiv = styled.div`
     width: 100%;
-    height: 20%;
+    height: 200px;
     position: relative;
     bottom: -200px;
-    margin-left: -20px;
+    margin-left: -42px;
     padding-left: 50px;
     background-color: ${colors.primary};
     display: flex;

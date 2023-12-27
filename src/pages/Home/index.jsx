@@ -33,7 +33,7 @@ const StyledText1 = styled.p`
         font-size: 1.5em;
     }
     @media only screen and (max-width: 520px){
-        font-size: 1em;
+        font-size: 1.3em;
     }
 `
 const StyledText2 = styled.p`
@@ -41,15 +41,15 @@ const StyledText2 = styled.p`
     text-align: center;
     font-size: 1.5em;
     @media only screen and (max-width: 915px){
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
     @media only screen and (max-width: 520px){
-        font-size: 0.8em;
-        width: 400px;
+        font-size: 1em;
+        width: 450px;
     }
     @media only screen and (max-width: 440px){
-        width: 250px;
-        font-size: 0.7em;
+        width: 350px;
+        font-size: 0.9em;
     }
 `
 
