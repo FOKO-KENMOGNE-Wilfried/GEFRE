@@ -7,10 +7,12 @@ import whatsapp from "../../assets/icon/whatsapp.png";
 const StyledDiv = styled.div`
     width: 100%;
     height: 20%;
-    position: absolute;
+    position: relative;
     bottom: -200px;
     left: 0;
     right: 0;
+    margin-left: -20px;
+    padding-left: 28px;
     background-color: ${colors.primary};
     display: flex;
     flex-direction: row;
@@ -18,11 +20,6 @@ const StyledDiv = styled.div`
     gap: 40%;
     @media only screen and (max-width: 1200px){
         gap: 30%;
-    }
-    @media only screen and (max-width: 1186px){
-        position: relative;
-        margin-left: -20px;
-        padding-left: 28px;
     }
     @media only screen and (max-width: 920px){
         gap: 20%;

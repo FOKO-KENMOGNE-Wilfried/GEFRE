@@ -24,7 +24,7 @@ const StyledDivMobile = styled.div`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;

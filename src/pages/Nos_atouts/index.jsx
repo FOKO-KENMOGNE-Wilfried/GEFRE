@@ -40,7 +40,7 @@ const StyledText1 = styled.p`
         font-size: 1em;
     }
 `
-const StyledText2 = styled.p`
+const StyledText2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;

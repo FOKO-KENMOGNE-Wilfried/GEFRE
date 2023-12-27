@@ -20,13 +20,29 @@ const StyledText1 = styled.p`
     font-weight: bold;
     text-align: center;
     font-size: 2.5em;
+    @media only screen and (max-width: 1265px){
+        font-size: 2em;
+    }
+    @media only screen and (max-width: 1265px){
+        font-size: 1.5em;
+    }
+    @media only screen and (max-width: 385px){
+        font-size: 1em;
+    }
 `
 const StyledBox = styled.div`
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 50px;
     gap: 50px;
+    @media only screen and (max-width: 385px){
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 0px;
+    }
 `
 const StyledSubBox = styled.div`
     display: flex;
@@ -43,14 +59,48 @@ const StyledSubBox = styled.div`
         transform: translateY(-50px);
         box-shadow: 2px 2px 2px 2px #878787;
     }
+    @media only screen and (max-width: 1265px){
+        width: 100px;
+        height: 200px;
+        &:hover{
+            transform: translateY(0);
+        }
+    }
+    @media only screen and (max-width: 1265px){
+        height: 150px;
+        gap: 10px;
+    }
+    @media only screen and (max-width: 596px){
+        height: 120px;
+    }
+    @media only screen and (max-width: 385px){
+        height: 80px;
+    }
 `
 const StyledImg = styled.img`
     width: 86px;
     height: 86px;
+    @media only screen and (max-width: 1265px){
+        width: 56px;
+        height: 56px;
+    }
+    @media only screen and (max-width: 385px){
+        width: 26px;
+        height: 26px;
+    }
 `
 const StyledP = styled.p`
     color: ${colors.four};
     text-align: center;
+    @media only screen and (max-width: 1265px){
+        font-size: 0.8em;   
+    }
+    @media only screen and (max-width: 1265px){
+        font-size: 0.6em;
+    }
+    @media only screen and (max-width: 385px){
+        font-size: 0.4em;
+    }
 `
 const StyledMianBox = styled.div`
     display: flex;

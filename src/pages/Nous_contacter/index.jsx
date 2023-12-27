@@ -11,7 +11,7 @@ const StyledMainDiv = styled.div`
     align-items: center;
     margin-top: 200px;
 `
-const StyledText1 = styled.p`
+const StyledText1 = styled.div`
     left: 800px;
     color: ${colors.secondary};
     font-weight: bold;
@@ -71,9 +71,10 @@ const StyledImg3 = styled.img`
     width: 80px;
     height: 80px;
 `
-const StyledP = styled.p`
+const StyledP = styled.div`
     color: ${colors.secondary};
     text-align: center;
+    height: 150px;
 `
 const StyledSubP = styled.p`
     color: black;
@@ -83,9 +84,14 @@ const StyledSubP = styled.p`
     }
 `
 const StyledMainBox = styled.div`
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 100px;
+`
+const StyledA = styled.a`
+    text-decoration: none;
 `
 
 function Contacter(){
@@ -108,6 +114,7 @@ function Contacter(){
                             </StyledSubP>
                         </StyledP>
                     </StyledSubBox>
+                    <StyledA href="mailto:gefre.edu@gmail.com">
                     <StyledSubBox>
                         <StyledImg2 src={mail} alt="phone" />
                         <StyledP>
@@ -119,6 +126,7 @@ function Contacter(){
                             </StyledSubP>
                         </StyledP>
                     </StyledSubBox>
+                    </StyledA>
                     <StyledSubBox>
                         <StyledImg3 src={whatsapp} alt="phone" />
                         <StyledP>
