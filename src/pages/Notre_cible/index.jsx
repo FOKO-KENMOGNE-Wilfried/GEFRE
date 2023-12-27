@@ -26,6 +26,10 @@ const StyledImg = styled.img`
         width: 100px;
         height: 100px;
     }
+    @media only screen and (max-width: 515px){
+        width: 150px;
+        height: 150px;
+    }
 `
 const StyledText1 = styled.p`
     left: 800px;
@@ -47,6 +51,9 @@ const StyledText2 = styled.div`
     text-align: center;
     font-size: 1.5em;
     margin-top: 150px;
+    @media only screen and (max-width: 862px){
+        margin-top: 0px;
+    }
 `
 const StyledText3 = styled.p`
     text-align: left;
@@ -55,6 +62,9 @@ const StyledText3 = styled.p`
     }
     @media only screen and (max-width: 862px){
         font-size: 0.5em;
+    }
+    @media only screen and (max-width: 400px){
+        font-size: 0.4em;
     }
 `
 const StyledLi = styled.li`
@@ -67,6 +77,12 @@ const StyledLi = styled.li`
     }
     @media only screen and (max-width: 862px){
         font-size: 0.5em;
+    }
+    @media only screen and (max-width: 400px){
+        font-size: 0.4em;
+    }
+    @media only screen and (max-width: 400px){
+        gap: 10px
     }
 `
 const StyledCheck = styled.img`
@@ -82,12 +98,20 @@ const StyledCheck = styled.img`
         height: 15px;
         margin-top: 13px;
     }
+    @media only screen and (max-width: 400px){
+        width: 10px;
+        height: 10px;
+        margin-top: 10px;
+    }
 `
 const StyledBox1 =styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 515px){
+        flex-direction: column-reverse;
+    }
 `
 
 function Cibles(){

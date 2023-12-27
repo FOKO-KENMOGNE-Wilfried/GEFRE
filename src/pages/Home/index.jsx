@@ -35,9 +35,6 @@ const StyledText1 = styled.p`
     @media only screen and (max-width: 520px){
         font-size: 1em;
     }
-    @media only screen and (max-width: 440px){
-        font-size: 0.8em;
-    }
 `
 const StyledText2 = styled.p`
     width: 500px;
