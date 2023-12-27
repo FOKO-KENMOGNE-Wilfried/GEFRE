@@ -9,10 +9,8 @@ const StyledDiv = styled.div`
     height: 20%;
     position: relative;
     bottom: -200px;
-    left: 0;
-    right: 0;
     margin-left: -20px;
-    padding-left: 28px;
+    padding-left: 50px;
     background-color: ${colors.primary};
     display: flex;
     flex-direction: row;
