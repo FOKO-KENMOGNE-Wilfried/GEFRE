@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import colors from "../../utils/style";
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-import cross from "../../assets/icon/cross.png"
-import menu from "../../assets/icon/menu.png"
-import logo from "../../assets/img/logo.png"
+import cross from "../../assets/icon/cross.png";
+import menu from "../../assets/icon/menu.png";
+import logo from "../../assets/img/logo.png";
 
 const StyledDiv = styled.div`
     display: flex;
@@ -119,7 +119,7 @@ const StyledContainerTwo = styled.div`
         
     }
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
     font-size: 1em;
     text-decoration: none;
     color: ${colors.four};
@@ -197,11 +197,11 @@ function Header(){
                             <StyleMenuImg src={cross} alt="close-menu" onClick={() => toggle()}/>
                             <StyledSubDivTwoMobile>
                                 <StyledContainerTwo>
-                                    <StyledLink to={"/"}>Accueil</StyledLink>
-                                    <StyledLink to={"/formations"}>Nos Formations</StyledLink>
-                                    <StyledLink to={"/contacter"}>Nous contacter</StyledLink>
-                                    <StyledLink to={"/cibles"}>Nos cibles </StyledLink>
-                                    <StyledLink to={"/atouts"}>Nos atouts</StyledLink>
+                                    <StyledLink to={"/"} className="navbar-active" >Accueil</StyledLink>
+                                    <StyledLink to={"/formations"} className="navbar-active" >Nos Formations</StyledLink>
+                                    <StyledLink to={"/contacter"} className="navbar-active" >Nous contacter</StyledLink>
+                                    <StyledLink to={"/cibles"} className="navbar-active" >Nos cibles </StyledLink>
+                                    <StyledLink to={"/atouts"} className="navbar-active" >Nos atouts</StyledLink>
                                 </StyledContainerTwo>
                             </StyledSubDivTwoMobile>
                     </StyledContainerOne>

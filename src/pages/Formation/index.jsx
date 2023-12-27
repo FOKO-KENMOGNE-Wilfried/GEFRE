@@ -11,24 +11,21 @@ const StyledMainDiv = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
     height: 60vh;
-    margin-top: 200px;
+    margin-top: 300px;
 `
 const StyledText1 = styled.p`
-    position: absolute;
-    top: 250px;
     left: 800px;
     color: ${colors.secondary};
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
 `
 const StyledBox = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 350px;
+    margin-top: 50px;
     gap: 50px;
 `
 const StyledSubBox = styled.div`
@@ -41,8 +38,10 @@ const StyledSubBox = styled.div`
     border-radius: 20px;
     height: 300px;
     width: 150px;
+    transition: transform 0.3s ease-in-out;
     &:hover{
-        
+        transform: translateY(-50px);
+        box-shadow: 2px 2px 2px 2px #878787;
     }
 `
 const StyledImg = styled.img`
@@ -53,10 +52,16 @@ const StyledP = styled.p`
     color: ${colors.four};
     text-align: center;
 `
+const StyledMianBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
 
 function Formation(){
-    return(        <StyledMainDiv>
-            <div>
+    return(        
+        <StyledMainDiv>
+            <StyledMianBox>
                 <StyledText1>QUE FAISONS NOUS ?</StyledText1>
                 <StyledBox>
                     <StyledSubBox>
@@ -90,7 +95,7 @@ function Formation(){
                         </StyledP>
                     </StyledSubBox>
                 </StyledBox>
-            </div>
+            </StyledMianBox>
         </StyledMainDiv>
     )
 }

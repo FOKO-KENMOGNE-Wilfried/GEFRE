@@ -9,32 +9,40 @@ const StyledMainDiv = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
-    height: 60vh;
     margin-top: 200px;
 `
 const StyledText1 = styled.p`
-    position: absolute;
-    top: 250px;
     left: 800px;
     color: ${colors.secondary};
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-top: 150px;
 `
 const StyledSubText = styled.p`
-    margin-top: 0px;
-    margin-left: 20px;
     font-size: 0.4em;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: 480px;
     color: black;
-    width: 250px;
+    @media only screen and (max-width: 1400px){
+        margin-left: 400px;
+    }
+    @media only screen and (max-width: 1186px){
+        margin-left: 50px;
+    }
 `
 const StyledBox = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 150px;
     gap: 100px;
+    @media only screen and (max-width: 1400px){
+        padding: 25px;
+    }
+    @media only screen and (max-width: 1186px){
+        flex-direction: column;
+    }
 `
 const StyledSubBox = styled.div`
     display: flex;
@@ -46,6 +54,9 @@ const StyledSubBox = styled.div`
     border-radius: 20px;
     &:hover{
         box-shadow: 2px 2px 2px 2px #878787;
+    }
+    @media only screen and (max-width: 1400px){
+        padding: 25px;
     }
 `
 const StyledImg = styled.img`
@@ -67,11 +78,20 @@ const StyledP = styled.p`
 const StyledSubP = styled.p`
     color: black;
     width: 300px;
+    @media only screen and (max-width: 1400px){
+        width: 250px;
+    }
 `
+const StyledMainBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`
+
 function Contacter(){
     return(
         <StyledMainDiv>
-            <div>
+            <StyledMainBox>
                 <StyledText1>
                     CONTACTEZ-NOUS <br />
                     <StyledSubText>Nous sommes disponibles du lundi au samedi</StyledSubText>
@@ -111,7 +131,7 @@ function Contacter(){
                         </StyledP>
                     </StyledSubBox>
                 </StyledBox>
-            </div>
+            </StyledMainBox>
         </StyledMainDiv>
     )
 }

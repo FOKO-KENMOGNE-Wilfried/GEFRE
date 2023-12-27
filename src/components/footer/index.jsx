@@ -19,6 +19,11 @@ const StyledDiv = styled.div`
     @media only screen and (max-width: 1200px){
         gap: 30%;
     }
+    @media only screen and (max-width: 1186px){
+        position: relative;
+        margin-left: -20px;
+        padding-left: 28px;
+    }
     @media only screen and (max-width: 920px){
         gap: 20%;
     }
