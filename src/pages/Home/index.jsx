@@ -19,6 +19,11 @@ const StyledMainDiv = styled.div`
 const StyledImg = styled.img`
     width: 300px;
     height: 300px;
+    @media only screen and (max-width: 914px){
+        width: 250px;
+        height: 250px;
+        margin-top: 100px;
+    }
     @media only screen and (max-width: 440px){
         width: 200px;
         height: 200px;
@@ -41,14 +46,14 @@ const StyledText2 = styled.p`
     text-align: center;
     font-size: 1.5em;
     @media only screen and (max-width: 915px){
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
     @media only screen and (max-width: 520px){
         font-size: 1em;
         width: 450px;
     }
     @media only screen and (max-width: 440px){
-        width: 350px;
+        width: 300px;
         font-size: 0.9em;
     }
 `
