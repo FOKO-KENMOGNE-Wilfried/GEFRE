@@ -27,6 +27,7 @@ const StyledDiv = styled.div`
     }
     @media only screen and (max-width: 620px){
         gap: 0%;
+        padding-left: 70px;
     }
 `
 const StyledContainer = styled.div`
