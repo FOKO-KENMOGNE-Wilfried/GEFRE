@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import cross from "../../assets/icon/cross.png";
 import menu from "../../assets/icon/menu.png";
 import logo from "../../assets/img/logo.png";
+import "./style.css";
 
 const StyledDiv = styled.div`
     display: flex;
@@ -197,11 +198,11 @@ function Header(){
                             <StyleMenuImg src={cross} alt="close-menu" onClick={() => toggle()}/>
                             <StyledSubDivTwoMobile>
                                 <StyledContainerTwo>
-                                    <StyledLink to={"/"} className="navbar-active" >Accueil</StyledLink>
-                                    <StyledLink to={"/formations"} className="navbar-active" >Nos Formations</StyledLink>
-                                    <StyledLink to={"/contacter"} className="navbar-active" >Nous contacter</StyledLink>
-                                    <StyledLink to={"/cibles"} className="navbar-active" >Nos cibles </StyledLink>
-                                    <StyledLink to={"/atouts"} className="navbar-active" >Nos atouts</StyledLink>
+                                    <StyledLink to={"/"} className="active-link">Accueil</StyledLink>
+                                    <StyledLink to={"/formations"} className="active-link">Nos Formations</StyledLink>
+                                    <StyledLink to={"/contacter"} className="active-link">Nous contacter</StyledLink>
+                                    <StyledLink to={"/cibles"} className="active-link">Nos cibles </StyledLink>
+                                    <StyledLink to={"/atouts"} className="active-link">Nos atouts</StyledLink>
                                 </StyledContainerTwo>
                             </StyledSubDivTwoMobile>
                     </StyledContainerOne>
@@ -222,15 +223,15 @@ function Header(){
                 </StyledP>
             </StyledSubDivOne>
             <StyledSubDivTwo>
-                <StyledLink to={"/"}>Accueil</StyledLink>
+                <StyledLink to={"/"} className="active-link">Accueil</StyledLink>
                 <p>|</p>
-                <StyledLink to={"/formations"}>Nos Formations</StyledLink>
+                <StyledLink to={"/formations"} className="active-link">Nos Formations</StyledLink>
                 <p>|</p>
-                <StyledLink to={"/contacter"}>Nous contacter</StyledLink>
+                <StyledLink to={"/contacter"} className="active-link">Nous contacter</StyledLink>
                 <p>|</p>
-                <StyledLink to={"/cibles"}>Nos cibles </StyledLink>
+                <StyledLink to={"/cibles"} className="active-link">Nos cibles </StyledLink>
                 <p>|</p>
-                <StyledLink to={"/atouts"}>Nos atouts</StyledLink>
+                <StyledLink to={"/atouts"} className="active-link">Nos atouts</StyledLink>
             </StyledSubDivTwo>
         </StyledDiv>
     )

@@ -1,4 +1,3 @@
-.navbar-active.active{
-    background-color: #F19F57;
-    font-size: 200px;
+.active-link.active{
+    color: #f1bb8c;
 }
