@@ -213,7 +213,7 @@ function Formation(){
                         <p>INFORMATIQUE</p>
                         <StyledRange>
                             <p>
-                                De 4eme en Terminal
+                                De 6eme en Terminal
                             </p>
                         </StyledRange>
                     </StyledSubBox>

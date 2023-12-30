@@ -30,6 +30,25 @@ const StyledMainDiv = styled.div`
     }
     @media only screen and (max-width: 599px){
         margin-top: 379px;
+        height: 410px;
+    }
+    @media only screen and (max-width: 569px){
+        height: 410px;
+    }
+    @media only screen and (max-width: 537px){
+        height: 450px;
+    }
+    @media only screen and (max-width: 435px){
+        height: 460px;
+    }
+    @media only screen and (max-width: 397px){
+        height: 480px;
+    }
+    @media only screen and (max-width: 361px){
+        height: 500px;
+    }
+    @media only screen and (max-width: 339px){
+        height: 520px;
     }
 `
 const StyledSubMainDiv = styled.div`
