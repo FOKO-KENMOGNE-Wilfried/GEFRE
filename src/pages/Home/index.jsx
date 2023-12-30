@@ -1,51 +1,112 @@
 import styled from "styled-components";
-import home_img from "../../assets/img/home_img.jpg";
+import home_img from "../../assets/img/home_img.jpeg";
 import colors from "../../utils/style";
-import "./style.css"
+import { NavLink } from "react-router-dom";
 
 const StyledMainDiv = styled.div`
-    display: flex;
-    flex-direction: column;
     margin-top: 200px;
-    height: 50vh;
-    width: 101%;
+    height: 500px;
+    margin-bottom: 70px;
     margin-left: -10px;
+    margin-right: -8px;
+    @media only screen and (max-width: 1783px){
+        margin-top: 171px;
+    }
+    @media only screen and (max-width: 1438px){
+        margin-top: 170px;
+    }
+    @media only screen and (max-width: 1120px){
+        margin-top: 130px;
+    }
+    @media only screen and (max-width: 704px){
+        margin-top: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 390px;
+    }
+    @media only screen and (max-width: 620px){
+        margin-right: -28px;
+    }
+    @media only screen and (max-width: 599px){
+        margin-top: 379px;
+    }
 `
 const StyledSubMainDiv = styled.div`
-    padding-bottom: 85px;
+    background-image: url(${home_img});
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% 170% ;
+    background-position-y: 93%;
+    height: 100%;
+    padding-bottom: 42px;
+    padding-top: 42px;
+    @media only screen and (max-width: 1438px){
+        background-size: 100% 150%;
+    }
+    @media only screen and (max-width: 1120px){
+        background-size: 100% 130%;
+    }
+    @media only screen and (max-width: 1022px){
+        background-size: 100% 110%;
+    }
 `
 const StyledPresentationDiv = styled.div`
-    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
     width: 35%;
     height: 100%;
     margin-left: 20px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 20p;
+    @media only screen and (max-width: 704px){
+        width: 30%;
+    }
+    @media only screen and (max-width: 499px){
+        margin-top: 30px;
+        width: 40%;
+    }
 `
 const StyledTitle = styled.p`
-    padding-top: 20px;
     color: ${colors.secondary};
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
+    @media only screen and (max-width: 1783px){
+        font-size: 2.5em;
+    }
+    @media only screen and (max-width: 1438px){
+        margin-top: 10px;
+    }
 
 `
 const StyledText = styled.p`
-    color: black;
-    font-size: 1.8em;
+    color: ${colors.four};
+    font-size: 2em;
     width: 70%;
     margin: auto
 `
 const StyledDivText = styled.div`
     background-color: ${colors.secondary};
     padding: 5px 0px 5px 0px;
-    color: ${colors.four};
+    color: black;
     font-size: 1.5em;
     padding-left: 15px;
+    font-weight: bold;
+    text-align: center;
 `
 const StyledDivStep = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 0.6fr;
     background-color: ${colors.third};
+    @media only screen and (max-width: 1438px){
+        font-size: 0.8em;
+    }
+    @media only screen and (max-width: 704px){
+        grid-template-columns: 1fr;
+    }
 `
 const StyledStep = styled.div`
     display: flex;
@@ -55,6 +116,16 @@ const StyledStep = styled.div`
     height: 100px;
     padding-right: 50px;
     font-size: 1.2em;
+    &:hover{
+        background-color: ${colors.primary};
+        //opacity: 0.5;
+    }
+    @media only screen and (max-width: 1120px){
+        font-size: 1em;
+    }
+    @media only screen and (max-width: 704px){
+        font-size: 1.5em;
+    }
 `
 const StyledStep2 = styled.div`
     display: flex;
@@ -65,18 +136,35 @@ const StyledStep2 = styled.div`
     padding-right: 50px;
     font-size: 1.2em;
     background-color: ${colors.secondary};
+    &:hover{
+        background-color: ${colors.primary};
+        //opacity: 0.5;
+    }
+    @media only screen and (max-width: 1120px){
+        font-size: 1em;
+    }
+    @media only screen and (max-width: 704px){
+        font-size: 1.5em;
+    }
 `
-const StyledStep3 = styled.div`
+const StyledStep3 = styled(NavLink)`
     display: flex;
     flex-direction: row;
-    gap: 10px;
     align-items: center;
     height: 100px;
-    padding-right: 50px;
-    font-size: 1.2em;
+    padding-right: 20px;
+    font-size: 1em;
     background-color: black;
     padding-left: 50px;
     color: ${colors.four};
+    text-decoration: none;
+    &:hover{
+        background-color: ${colors.primary};
+        //opacity: 0.5;
+    }
+    @media only screen and (max-width: 704px){
+        font-size: 1.5em;
+    }
 `
 
 const StyledNumber = styled.div`
@@ -87,18 +175,65 @@ const StyledNumber = styled.div`
     padding-right: 4px;
 `
 const StyledP = styled.p`
+    padding-top: 60%;
     margin-top: 10px;
 `
 const StyledStepP = styled.p`
     margin-top: 0px;
+    @media only screen and (min-width: 1439px){
+        margin-top: 30px;
+    }
+`
+const StyledStepP2 = styled.p`
+    margin-top: 0px;
+    margin-left: -20px;
+    @media only screen and (max-width: 1243px){
+        margin-left: -30px;
+    }
+    @media only screen and (max-width: 1120px){
+        font-size: 0.9em;
+    }
+    @media only screen and (max-width: 1000px){
+        font-size: 0.8em;
+        margin-left: -35px;
+    }
+    @media only screen and (max-width: 890px){
+        font-size: 0.8em;
+        margin-left: -40px;
+    }
+    @media only screen and (max-width: 810px){
+        font-size: 0.8em;
+        margin-left: -45px;
+    }
+    @media only screen and (max-width: 740px){
+        font-size: 0.8em;
+        margin-left: 0px;
+        margin: auto;
+    }
+`
+const StyledPresentation = styled.div`
+    font-size: 0.85em;
+    @media only screen and (max-width: 1438px){
+        font-size: 0.78em;
+    }
+    @media only screen and (max-width: 1120px){
+        font-size: 0.75em;
+    }
+    @media only screen and (max-width: 1022px){
+        font-size: 0.6em;
+    }
+    @media only screen and (max-width: 704px){
+        font-size: 0.4em;
+        margin-bottom: 10px;
+    }
 `
 
 function Home(){
     return(
         <StyledMainDiv>
-            <StyledSubMainDiv className="subMainDiv">
+            <StyledSubMainDiv>
                 <StyledPresentationDiv>
-                    <div>
+                    <StyledPresentation>
                         <StyledTitle>
                             GEFRE ?
                         </StyledTitle>
@@ -109,10 +244,9 @@ function Home(){
                             et le développement personnel de chaque apprenant constitue le
                             fondement même de la structure
                         </StyledText>
-                    </div>
+                    </StyledPresentation>
                 </StyledPresentationDiv>
             </StyledSubMainDiv>
-            <div>
                 <div>
                     <StyledDivText>
                         <p>LA REALISATION DE VOS REVES COMMENCE ICI</p>
@@ -134,12 +268,11 @@ function Home(){
                             <StyledNumber><StyledP>4</StyledP></StyledNumber>
                             <StyledStepP>Faites vous former</StyledStepP>
                         </StyledStep2>
-                        <StyledStep3>
-                            <StyledStepP>QUESTION ?</StyledStepP>
+                        <StyledStep3 to={"/contacter"}>
+                            <StyledStepP2>QUESTION ?</StyledStepP2>
                         </StyledStep3>
                     </StyledDivStep>
                 </div>
-            </div>
         </StyledMainDiv>
     )
 }
