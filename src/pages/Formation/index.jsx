@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import colors from "../../utils/style";
-import suivi from "../../assets/icon/suivi.png";
-import orintation from "../../assets/icon/orientation.png";
-import orintation2 from "../../assets/icon/orientation2.png";
-import e_learning from "../../assets/icon/e-learning.png";
-import exam from "../../assets/icon/exam.png";
+import math from "../../assets/img/mathematique.webp";
+import physique from "../../assets/img/physique.jpeg";
+import chimie from "../../assets/img/chimie.jpeg";
+import informatique from "../../assets/img/informatique.jpeg";
+import anglais from "../../assets/img/anglais.jpeg";
+import francais from "../../assets/img/francais.jpg";
 import "./style.css"
 
 const StyledMainDiv = styled.div`
@@ -178,7 +179,7 @@ function Formation(){
                         </StyledRange>
                     </StyledSubBox>
                     <div>
-                        <StyledImg src="src/assets/img/mathematique.webp" alt="mathematique" />
+                        <StyledImg src={math} alt="mathematique" />
                     </div>
                 </StyledBox>
                 <StyledBox>
@@ -191,7 +192,7 @@ function Formation(){
                         </StyledRange>
                     </StyledSubBox>
                     <div>
-                        <StyledImg src="src/assets/img/physique.jpeg" alt="physique" />
+                        <StyledImg src={physique} alt="physique" />
                     </div>
                 </StyledBox>
                 <StyledBox>
@@ -204,7 +205,7 @@ function Formation(){
                         </StyledRange>
                     </StyledSubBox>
                     <div>
-                        <StyledImg src="src/assets/img/chimie.jpeg" alt="chimie" />
+                        <StyledImg src={chimie} alt="chimie" />
                     </div>
                 </StyledBox>
                 <StyledBox>
@@ -217,7 +218,7 @@ function Formation(){
                         </StyledRange>
                     </StyledSubBox>
                     <div>
-                        <StyledImg src="src/assets/img/informatique.jpeg" alt="informatique" />
+                        <StyledImg src={informatique} alt="informatique" />
                     </div>
                 </StyledBox>
                 <StyledBox>
@@ -230,7 +231,7 @@ function Formation(){
                         </StyledRange>
                     </StyledSubBox>
                     <div>
-                        <StyledImg src="src/assets/img/anglais.jpeg" alt="anglais" />
+                        <StyledImg src={anglais} alt="anglais" />
                     </div>
                 </StyledBox>
                 <StyledBox>
@@ -243,7 +244,7 @@ function Formation(){
                         </StyledRange>
                     </StyledSubBox>
                     <div>
-                        <StyledImg src="src/assets/img/francais.jpg" alt="francais" />
+                        <StyledImg src={francais} alt="francais" />
                     </div>
                 </StyledBox>
             </div>
