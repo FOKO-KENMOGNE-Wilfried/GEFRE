@@ -258,8 +258,8 @@ function Home(){
                         <StyledText>
                             C’est une groupe d’enseignants experimentes
                             dont la motivation est axée sur le succès et l’épanouissement
-                            de leurs élèves. Leur engagement envers l’excellence académique
-                            et le développement personnel de chaque apprenant constitue le
+                            de leurs élèves. Leur engagements envers l’excellence académique
+                            et le développement personnel de chaque apprenant constituent le
                             fondement même de la structure
                         </StyledText>
                     </StyledPresentation>
