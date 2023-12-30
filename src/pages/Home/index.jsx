@@ -2,6 +2,7 @@ import styled from "styled-components";
 import home_img from "../../assets/img/home_img.jpeg";
 import colors from "../../utils/style";
 import { NavLink } from "react-router-dom";
+import "./style.css";
 
 const StyledMainDiv = styled.div`
     margin-top: 200px;
@@ -135,10 +136,6 @@ const StyledStep = styled.div`
     height: 100px;
     padding-right: 50px;
     font-size: 1.2em;
-    &:hover{
-        background-color: ${colors.primary};
-        //opacity: 0.5;
-    }
     @media only screen and (max-width: 1120px){
         font-size: 1em;
     }
@@ -157,10 +154,6 @@ const StyledStep2 = styled(NavLink)`
     text-decoration: none;
     color: black;
     background-color: ${colors.secondary};
-    &:hover{
-        background-color: ${colors.primary};
-        //opacity: 0.5;
-    }
     @media only screen and (max-width: 1120px){
         font-size: 1em;
     }
@@ -179,8 +172,12 @@ const StyledStep3 = styled(NavLink)`
     padding-left: 50px;
     color: ${colors.four};
     text-decoration: none;
+    transition: 
+    color 0.5s,
+    background-color 0.5s;
     &:hover{
-        background-color: ${colors.primary};
+        background-color: ${colors.four};
+        color: black;
         //opacity: 0.5;
     }
     @media only screen and (max-width: 704px){
@@ -285,7 +282,7 @@ function Home(){
                             <StyledNumber><StyledP>3</StyledP></StyledNumber>
                             <StyledStepP>Choisissez les formations qui vous interessent</StyledStepP>
                         </StyledStep>
-                        <StyledStep2 to={"/formations"}>
+                        <StyledStep2 to={"/formations"} className={"former"}>
                             <StyledNumber><StyledP>4</StyledP></StyledNumber>
                             <StyledStepP>Faites vous former</StyledStepP>
                         </StyledStep2>

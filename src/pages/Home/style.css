@@ -1,0 +1,6 @@
+.former{
+    transition: background-color 0.5s;
+}
+.former:hover{
+    background-color: white;
+}
