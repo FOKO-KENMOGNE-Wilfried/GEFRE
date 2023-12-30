@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import cross from "../../assets/icon/cross.png";
 import menu from "../../assets/icon/menu.png";
 import logo from "../../assets/img/logo.png";
-import "./style.css";
 
 const StyledDiv = styled.div`
     display: flex;
