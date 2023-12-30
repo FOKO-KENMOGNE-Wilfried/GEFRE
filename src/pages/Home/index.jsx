@@ -146,7 +146,7 @@ const StyledStep = styled.div`
         font-size: 1.5em;
     }
 `
-const StyledStep2 = styled.div`
+const StyledStep2 = styled(NavLink)`
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -154,6 +154,8 @@ const StyledStep2 = styled.div`
     height: 100px;
     padding-right: 50px;
     font-size: 1.2em;
+    text-decoration: none;
+    color: black;
     background-color: ${colors.secondary};
     &:hover{
         background-color: ${colors.primary};
@@ -283,7 +285,7 @@ function Home(){
                             <StyledNumber><StyledP>3</StyledP></StyledNumber>
                             <StyledStepP>Choisissez les formations qui vous interessent</StyledStepP>
                         </StyledStep>
-                        <StyledStep2>
+                        <StyledStep2 to={"/formations"}>
                             <StyledNumber><StyledP>4</StyledP></StyledNumber>
                             <StyledStepP>Faites vous former</StyledStepP>
                         </StyledStep2>
