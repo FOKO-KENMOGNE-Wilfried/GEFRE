@@ -26,6 +26,7 @@ const StyledMainDiv = styled.div`
         flex-direction: column;
         justify-content: center;
         height: 390px;
+        padding-bottom: 0px;
     }
     @media only screen and (max-width: 620px){
         margin-right: -28px;
@@ -188,7 +189,6 @@ const StyledStep3 = styled(NavLink)`
     margin-top 0.3s,
     background-color 0.3s;  
     width: 90px;  
-
     &:hover{  
         margin-bottom: 15px;
         font-weight: bold;  
@@ -218,8 +218,9 @@ const StyledStep3 = styled(NavLink)`
         position: relative;
         top: 0;
         right: 0;
+        margin: auto;
+        width: 40%;
         border-radius: 0px;
-        width: 100%;
         &:hover{
             background-color: ${colors.four};
             color: black;
