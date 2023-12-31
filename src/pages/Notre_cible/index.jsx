@@ -129,7 +129,6 @@ function Cibles(){
                     <StyledText1>NOS CIBLES</StyledText1>
                     <StyledBox1>
                         <div>
-                            <StyledText3>Nous disposons:</StyledText3>
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>

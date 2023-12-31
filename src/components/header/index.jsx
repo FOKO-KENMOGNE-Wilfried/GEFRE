@@ -158,6 +158,13 @@ const StyledHeader = styled.div`
     justify-content: space-around;
     gap: 8em;
 `
+const StyledSpan = styled.span`
+    position: relative;
+    display: block;
+    font-size: 0.5em;
+    text-align: center;
+    padding-top: 5px;
+`
 function Header(){
 
     const [isVisible, setVisible] = useState(false);
@@ -220,6 +227,7 @@ function Header(){
                 <StyledImg src={logo}/>
                 <StyledP>
                     Groupe des Enseignants pour la Formation et la Reussite
+                    <StyledSpan>Au GEFRÉ, la réussite est notre destination et le travail notre chemin</StyledSpan>
                 </StyledP>
             </StyledSubDivOne>
             <StyledSubDivTwo>

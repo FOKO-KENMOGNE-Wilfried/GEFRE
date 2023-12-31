@@ -10,6 +10,8 @@ const StyledMainDiv = styled.div`
     align-items: center;
     gap: 100px;
     height: 60vh;
+    padding-top: 115px;
+    padding-bottom: 100px;
     margin-top: 230px;
     @media only screen and (max-width: 862px){
         margin-top: 130px;
@@ -140,6 +142,30 @@ function Atouts(){
                                 <StyledCheck src={check} alt="check" />
                                 <p>
                                     Des salles spacieuses où sont dispensés les cours.
+                                </p>
+                            </StyledLi>
+                            <StyledLi>
+                                <StyledCheck src={check} alt="check" />
+                                <p>
+                                    De personnes pour faire un suivi pedagigique des eleves durant l'annee scolaire en groupe et ou a domicile
+                                </p>
+                            </StyledLi>
+                            <StyledLi>
+                                <StyledCheck src={check} alt="check" />
+                                <p>
+                                    De personnes pour conseiller et orienter les apprenants
+                                </p>
+                            </StyledLi>
+                            <StyledLi>
+                                <StyledCheck src={check} alt="check" />
+                                <p>
+                                    D'un systeme d'enseignement a distance
+                                </p>
+                            </StyledLi>
+                            <StyledLi>
+                                <StyledCheck src={check} alt="check" />
+                                <p>
+                                    Des competences necessaires permettants de preparer les apprenants aux cncours dans les grandes ecoles
                                 </p>
                             </StyledLi>
                         </div>
