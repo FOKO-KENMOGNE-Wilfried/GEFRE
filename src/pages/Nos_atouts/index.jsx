@@ -167,13 +167,13 @@ function Atouts(){
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    De personnes pour faire un suivi pedagigique des eleves durant l'annee scolaire en groupe et ou a domicile
+                                    De personnes qualifiers pour faire un suivi pedagigique des eleves durant l'annee scolaire en groupe et ou a domicile
                                 </p>
                             </StyledLi>
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    De personnes pour conseiller et orienter les apprenants
+                                    De personnes qualifiers pour conseiller et orienter les apprenants
                                 </p>
                             </StyledLi>
                             <StyledLi>
