@@ -129,7 +129,7 @@ function Footer(){
                 <StyledImgBox>
                     <StyledPhone src={telephone} alt="telephone"/>
                     <a href="mailto:gefre.edu@gmail.com"><StyledMail src={mail} alt="mail"/></a>
-                    <StyledSapp src={whatsapp} alt="whatsapp"/>
+                    <a href="https://api.whatsapp.com/send?phone=237675052790"><StyledSapp src={whatsapp} alt="whatsapp"/></a>
                 </StyledImgBox>
             </StyledContact>
         </StyledDiv>

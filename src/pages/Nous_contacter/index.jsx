@@ -67,6 +67,8 @@ const StyledSubBox = styled.div`
     }
 `
 const StyledImg = styled.img`
+    padding-bottom: 20px;
+    margin-top: 10px;
     width: 40px;
     height: 50px;
 `
