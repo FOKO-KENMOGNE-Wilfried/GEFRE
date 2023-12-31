@@ -40,6 +40,7 @@ const StyledMainDiv = styled.div`
 const StyledImg = styled.img`
     width: 350px;
     height: 300px;
+    margin-right: 250px;
     @media only screen and (max-width: 1222px){
         width: 250px;
         height: 200px;
@@ -70,7 +71,6 @@ const StyledText2 = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     font-size: 1.5em;
     margin-top: 150px;
     @media only screen and (max-width: 862px){
@@ -138,6 +138,7 @@ const StyledBox1 =styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-left: 10%;
     @media only screen and (max-width: 515px){
         flex-direction: column-reverse;
     }
@@ -189,7 +190,6 @@ function Atouts(){
                                 </p>
                             </StyledLi>
                         </div>
-                        <StyledImg src={atout} alt="home_img"/>
                     </StyledBox1>
                 </StyledText2>
             </div>

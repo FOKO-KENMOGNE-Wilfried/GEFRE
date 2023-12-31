@@ -2,9 +2,10 @@ import styled from "styled-components";
 import colors from "../../utils/style";
 import {  NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-import cross from "../../assets/icon/cross.png";
+import cross from "../../assets/icon/cross2.png";
 import menu from "../../assets/icon/menu.png";
 import logo from "../../assets/img/logo.png";
+import "./style.css"
 
 const StyledDiv = styled.div`
     display: flex;
@@ -99,7 +100,7 @@ const StyledSubDivTwoMobile = styled.div`
     height: 100vh;
     width: 148px;
     gap: 40px;
-    background-color: ${colors.primary};
+    background-color: black;
     color: ${colors.four};
 `
 const StyledContainerOne = styled.div`
@@ -146,10 +147,19 @@ const StyledP = styled.p`
 const StyleMenuImg = styled.img`
     position: relative;
     top: 10px;
-    right: 40px;
+    right: 10px;
     width: 40px;
     height: 40px;
     z-index: 1;
+`
+const StyleMenuImg2 = styled.img`
+    position: relative;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    transform: rotate(45deg);
 `
 const StyledHeader = styled.div`
     display: flex;
@@ -202,7 +212,7 @@ function Header(){
                 </StyledSubDivOneMobile>
                 { isVisible ? (
                     <StyledContainerOne>
-                            <StyleMenuImg src={cross} alt="close-menu" onClick={() => toggle()}/>
+                            <StyleMenuImg2 src={cross} alt="close-menu" onClick={() => toggle()}/>
                             <StyledSubDivTwoMobile>
                                 <StyledContainerTwo>
                                     <StyledLink to={"/"} className="active-link">Accueil</StyledLink>
