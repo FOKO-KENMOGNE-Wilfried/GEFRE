@@ -90,7 +90,7 @@ const StyledSubDivTwo = styled.div`
 const StyledSubDivTwoMobile = styled.div`
     display: flex;
     position: fixed;
-    top: -30px;
+    top: -100px;
     right: -1px;
     flex-direction: column;
     align-items: center;
@@ -103,21 +103,20 @@ const StyledSubDivTwoMobile = styled.div`
     color: ${colors.four};
 `
 const StyledContainerOne = styled.div`
-    
+
 `
 const StyledContainerTwo = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    margin-top: 80px;
     @media only screen and (max-width: 1438px){
         padding-top: 40px;
     }
     @media only screen and (max-width: 1120px){
         padding-top: 0px;
     }
-    @media only screen and (max-width: 620px){
-        
-    }
+
 `
 const StyledLink = styled(NavLink)`
     font-size: 1em;
@@ -145,10 +144,12 @@ const StyledP = styled.p`
     }
 `
 const StyleMenuImg = styled.img`
-    position: fixed;
-    right: 30px;
+    position: relative;
+    top: 10px;
+    right: 40px;
     width: 40px;
     height: 40px;
+    z-index: 1;
 `
 const StyledHeader = styled.div`
     display: flex;
