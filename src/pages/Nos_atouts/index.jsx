@@ -15,6 +15,19 @@ const StyledMainDiv = styled.div`
     margin-top: 230px;
     @media only screen and (max-width: 862px){
         margin-top: 130px;
+        padding-top: 190px;
+    }
+    @media only screen and (max-width: 841px){
+        padding-top: 240px;
+    }
+    @media only screen and (max-width: 687px){
+        padding-top: 270px;
+    }
+    @media only screen and (max-width: 563px){
+        padding-top: 310px;
+    }
+    @media only screen and (max-width: 535px){
+        padding-top: 340px;
     }
 `
 const StyledImg = styled.img`
