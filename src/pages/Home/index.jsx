@@ -10,6 +10,7 @@ const StyledMainDiv = styled.div`
     margin-bottom: 70px;
     margin-left: -10px;
     margin-right: -8px;
+    padding-bottom: 100px;
     @media only screen and (max-width: 1783px){
         margin-top: 171px;
     }
@@ -165,23 +166,69 @@ const StyledStep3 = styled(NavLink)`
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100px;
+    height: 10px;  
+    padding-top: 40px;  
+    padding-bottom: 20px;  
     padding-right: 20px;
     font-size: 1em;
     background-color: black;
     padding-left: 50px;
     color: ${colors.four};
     text-decoration: none;
-    transition: 
-    color 0.5s,
-    background-color 0.5s;
-    &:hover{
-        background-color: ${colors.four};
-        color: black;
-        //opacity: 0.5;
-    }
+    position: relative;  
+    top: 115%;  
+    right: 40vw;  
+    border-radius: 20px;  
+    transition:  
+    color 0.3s,  
+    padding-top 0.3s,  
+    padding-bottom 0.3s,  
+    border-radius 0.3s,  
+    margin-bottom 0.3s,
+    margin-top 0.3s,
+    background-color 0.3s;  
+    width: 90px;  
+
+    &:hover{  
+        margin-bottom: 15px;
+        font-weight: bold;  
+        border-radius: 10px;  
+        margin-top: 10px;  
+        padding-top: 30px;  
+        padding-bottom: 10px;  
+        color: black;  
+        background-color: ${colors.third};  
+    }  
     @media only screen and (max-width: 704px){
         font-size: 1.5em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100px;
+        padding-right: 20px;
+        background-color: black;
+        padding-left: 50px;
+        color: ${colors.four};
+        text-decoration: none;
+        transition: 
+        color 0.5s,
+        background-color 0.5s;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        top: 0;
+        right: 0;
+        border-radius: 0px;
+        width: 100%;
+        &:hover{
+            background-color: ${colors.four};
+            color: black;
+            //opacity: 0.5;
+        }
+        @media only screen and (max-width: 704px){
+            font-size: 1.5em;
+        }
+
     }
 `
 
@@ -205,27 +252,16 @@ const StyledStepP = styled.p`
 const StyledStepP2 = styled.p`
     margin-top: 0px;
     margin-left: -20px;
-    @media only screen and (max-width: 1243px){
-        margin-left: -30px;
-    }
-    @media only screen and (max-width: 1120px){
-        font-size: 0.9em;
-    }
-    @media only screen and (max-width: 1000px){
-        font-size: 0.8em;
-        margin-left: -35px;
-    }
-    @media only screen and (max-width: 890px){
-        font-size: 0.8em;
-        margin-left: -40px;
-    }
-    @media only screen and (max-width: 810px){
-        font-size: 0.8em;
-        margin-left: -45px;
+    @media only screen and (max-width: 1438px){
+        font-size: 1em;
+        padding-left: 10px;
     }
     @media only screen and (max-width: 740px){
-        font-size: 0.8em;
         margin-left: 0px;
+        padding-top: -50px;
+        padding-left: 0px;
+    }
+    @media only screen and (max-width: 704px){
         margin: auto;
     }
 `

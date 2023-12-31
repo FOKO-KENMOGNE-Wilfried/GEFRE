@@ -2,7 +2,7 @@ import styled from "styled-components";
 import colors from "../../utils/style";
 import {  NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
-import cross from "../../assets/icon/cross2.png";
+import cross from "../../assets/icon/cross.png";
 import menu from "../../assets/icon/menu.png";
 import logo from "../../assets/img/logo.png";
 import "./style.css"
@@ -159,7 +159,7 @@ const StyleMenuImg2 = styled.img`
     width: 40px;
     height: 40px;
     z-index: 1;
-    transform: rotate(45deg);
+    filter: invert(1);
 `
 const StyledHeader = styled.div`
     display: flex;

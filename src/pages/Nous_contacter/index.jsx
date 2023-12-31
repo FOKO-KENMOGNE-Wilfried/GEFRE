@@ -59,7 +59,11 @@ const StyledSubBox = styled.div`
     background-color: ${colors.five};
     padding: 30px;
     border-radius: 20px;
+    transition:
+    background-color 0.3s;
     &:hover{
+        font-weight: bold;
+        background-color: ${colors.third};
         box-shadow: 2px 2px 2px 2px #878787;
     }
     @media only screen and (max-width: 1400px){
