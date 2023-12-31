@@ -8,10 +8,9 @@ const StyledMainDiv = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 100px;
     height: 60vh;
     padding-top: 115px;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
     margin-top: 230px;
     @media only screen and (max-width: 862px){
         margin-top: 130px;
@@ -25,9 +24,17 @@ const StyledMainDiv = styled.div`
     }
     @media only screen and (max-width: 563px){
         padding-top: 310px;
+        padding-bottom: 250px;
     }
     @media only screen and (max-width: 535px){
         padding-top: 340px;
+    }
+    @media only screen and (max-width: 515px){
+        padding-top: 280px;
+        padding-bottom: 350px;
+    }
+    @media only screen and (max-width: 400px){
+        padding-top: 230px;
     }
 `
 const StyledImg = styled.img`
