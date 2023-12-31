@@ -3,6 +3,7 @@ import colors from "../../utils/style";
 import telephone from "../../assets/icon/telephone.png";
 import mail from "../../assets/icon/mail.png";
 import whatsapp from "../../assets/icon/whatsapp.png";
+import { NavLink } from "react-router-dom";
 
 const StyledDiv = styled.div`
     width: 100%;
@@ -100,6 +101,12 @@ const StyledMail = styled.img`
         height: 30px;
     }
 `
+const StyledLink = styled(NavLink)`
+    display: block;
+    padding-top: 12px;
+    text-decoration: none;
+    color: ${colors.four};
+`
 
 function Footer(){
     return(
@@ -107,10 +114,10 @@ function Footer(){
             <StyledContainer>
                 <p>A propos</p>
                 <div>
-                    <p>Accueil</p>
-                    <p>Nos formations</p>
-                    <p>Nos cibles</p>
-                    <p>Nos atouts</p>
+                    <StyledLink to={"/"}>Accueil</StyledLink>
+                    <StyledLink to={"/formations"}>Nos formations</StyledLink>
+                    <StyledLink to={"/cibles"}>Nos cibles</StyledLink>
+                    <StyledLink to={"/atouts"}>Nos atouts</StyledLink>
                     <p></p>
                     <p></p>
                 </div>

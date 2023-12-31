@@ -187,7 +187,7 @@ function Formation(){
                         <p>PHYSIQUE</p>
                         <StyledRange>
                             <p>
-                                De 6eme en Terminal
+                                De 4eme en Terminal
                             </p>
                         </StyledRange>
                     </StyledSubBox>
