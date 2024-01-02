@@ -156,25 +156,25 @@ function Atouts(){
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    D&apos;un cadre securisé, propre, alimenté en énergie et eau;
+                                    D&apos;un cadre securise, propre, alimente en energie et eau;
                                 </p>
                             </StyledLi>
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    Des salles spacieuses où sont dispensés les cours.
+                                    Des salles spacieuses ou sont dispenses les cours.
                                 </p>
                             </StyledLi>
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    De personnes qualifiers pour faire un suivi pedagigique des eleves durant l'annee scolaire en groupe et ou a domicile
+                                    De personnes qualifiees pour faire un suivi pedagogique des eleves durant l'annee scolaire en groupe et ou a domicile
                                 </p>
                             </StyledLi>
                             <StyledLi>
                                 <StyledCheck src={check} alt="check" />
                                 <p>
-                                    De personnes qualifiers pour conseiller et orienter les apprenants
+                                    De personnes qualifiees pour conseiller et orienter les apprenants
                                 </p>
                             </StyledLi>
                             <StyledLi>

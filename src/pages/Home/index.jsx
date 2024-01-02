@@ -313,7 +313,7 @@ function Home(){
                         </StyledStep>
                         <StyledStep2>
                             <StyledNumber><StyledP>2</StyledP></StyledNumber>
-                            <StyledStepP>Rencontrez un de nos encadreurs</StyledStepP>
+                            <StyledStepP>Rencontrez un de nos encadreurse</StyledStepP>
                         </StyledStep2>
                         <StyledStep>
                             <StyledNumber><StyledP>3</StyledP></StyledNumber>
