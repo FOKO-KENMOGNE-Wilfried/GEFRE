@@ -6,16 +6,23 @@ import chimie from "../../assets/img/chimie.jpeg";
 import informatique from "../../assets/img/informatique.jpeg";
 import anglais from "../../assets/img/anglais.jpeg";
 import francais from "../../assets/img/francais.jpg";
-import "./style.css"
+import range from "../../assets/img/range.webp"
 
 const StyledMainDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 230px;
 `
 const StyledDivTitle = styled.div`
+
+    background-image: url(${range});
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100% 100% ;
+    background-position-y: 5%;
+
     position: relative;
     top: 0;
     padding-left: 16.5px;
